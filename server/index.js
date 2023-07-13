@@ -30,7 +30,7 @@ const app = express();
 //NOTE: Make sure the POrt is the same as the proxy.
 const PORT = 5000;
 //Connect the mongoose to the database using it's connect method.
-mongoose.connect(process.env.CONNECTION_STRING,
+mongoose.connect(process.env.MONGO_URL,
     { useNewUrlParser: true },
     (err) => {
     if(err) {
